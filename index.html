@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Columbar</title>
+    <link rel="stylesheet" href="./fonts/TimesNewRoman/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/Muller/stylesheet.css">
+    <link rel="stylesheet" href="./css/vendor.min.css">
+    <link rel="stylesheet" href="./css/build.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="/" class="header__logo">
+                <img src="./images/logo.svg" alt="" width="264">
+            </a>
+            <nav class="header__nav d-none d-md-flex">
+                <a href="#" class="active">Навигация</a>
+                <a href="#">Навигация</a>
+                <a href="#">Навигация</a>
+                <a href="#">Навигация</a>
+            </nav>
+            <div class="header__contacts d-none d-lg-flex">
+                <a href="tel:8 800 800 80 80" class="phone">8 800 800 80 80</a>
+                <a href="#"><img src="./images/icons/whatsapp.svg" alt=""></a>
+                <a href="#"><img src="./images/icons/tg.svg" alt=""></a>
+                <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#cb-modal">Заказать звонок</button>
+            </div>
+            <div class="header__mobile-buttons d-lg-none">
+                <a href="#" class="header__call-btn" data-bs-toggle="modal" data-bs-target="#cb-modal">
+                    <img src="./images/icons/call.svg" alt="">
+                </a>
+                <a href="#" class="header__menu-btn">
+                    <img src="./images/icons/menu.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobile__menu">
+    <div class="mobile__menu__bg"></div>
+    <div class="inner-block">
+        <a href="#" class="header__menu-btn close-btn">
+            <img src="./images/icons/cross.svg" alt="">
+        </a>
+        <nav class="d-md-none">
+            <a href="#">Навигация</a>
+            <a href="#">Навигация</a>
+            <a href="#">Навигация</a>
+            <a href="#">Навигация</a>
+        </nav>
+        <div class="header__contacts">
+            <a href="tel:8 800 800 80 80" class="phone">8 800 800 80 80</a>
+            <a href="#"><img src="./images/icons/whatsapp.svg" alt=""></a>
+            <a href="#"><img src="./images/icons/tg.svg" alt=""></a>
+            <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#cb-modal">Заказать звонок</button>
+        </div>
+        <img class="logo d-md-none" src="./images/logo-only.svg" alt="" height="160">
+    </div>
+</div>
+<section class="promo">
+    <div class="container">
+        <div class="promo__block">
+            <div class="promo__anons">
+                <div class="text-heading">Искусство помнить</div>
+                <div class="text-anons">Изготовление колумбарных плит на граните высшей категории «ABSOLUT BLACK»</div>
+            </div>
+            <div class="promo__features">
+                <div class="d-none d-lg-block promo__features__decor"></div>
+                <div class="feature-item text-p">Премиальное
+                    качество
+                </div>
+                <div class="feature-item text-p">Индивидуальный подход
+                    к каждому клиенту
+                </div>
+                <div class="feature-item text-p">Пожизненная
+                    гарантия
+                </div>
+                <div class="feature-item text-p">Фотографичное сходство
+                    портрета на плите
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="catalog splide" aria-label="Catalog">
+    <div class="container">
+        <h2 class="h1">Каталог колумбарных плит</h2>
+        <div class="catalog__nav">
+            <p class="text-p mb-0">Все</p>
+            <p class="text-p mb-0">Мрамор</p>
+            <p class="text-p mb-0">Гранит</p>
+            <p class="text-p mb-0">Керамогранит</p>
+        </div>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="catalog__item">
+                        <div class="cover">
+                            <img src="./images/products/1.png">
+                        </div>
+                        <div class="info">
+                            <h3 class="h3">Гранитная плита</h3>
+                            <h2 class="h2">19 500 Р</h2>
+                            <p class="text-p">Плита изготавливается по индивидуальному дизайну. Стоимость плиты не
+                                зависит от ее
+                                размера.</p>
+                        </div>
+                        <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#cb-modal">Оформить заказ</button>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="catalog__item">
+                        <div class="cover">
+                            <img src="./images/products/2.png">
+                        </div>
+                        <div class="info">
+                            <h3 class="h3">Гранитная плита</h3>
+                            <h2 class="h2">19 500 Р</h2>
+                            <p class="text-p">Плита изготавливается по индивидуальному дизайну. Стоимость плиты не
+                                зависит от ее
+                                размера.</p>
+                        </div>
+                        <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#cb-modal">Оформить заказ</button>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="catalog__item">
+                        <div class="cover">
+                            <img src="./images/products/3.png">
+                        </div>
+                        <div class="info">
+                            <h3 class="h3">Гранитная плита</h3>
+                            <h2 class="h2">19 500 Р</h2>
+                            <p class="text-p">Плита изготавливается по индивидуальному дизайну. Стоимость плиты не
+                                зависит от ее
+                                размера.</p>
+                        </div>
+                        <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#cb-modal">Оформить заказ</button>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="catalog__item">
+                        <div class="cover">
+                            <img src="./images/products/4.png">
+                        </div>
+                        <div class="info">
+                            <h3 class="h3">Гранитная плита</h3>
+                            <h2 class="h2">19 500 Р</h2>
+                            <p class="text-p">Плита изготавливается по индивидуальному дизайну. Стоимость плиты не
+                                зависит от ее
+                                размера.</p>
+                        </div>
+                        <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#cb-modal">Оформить заказ</button>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="catalog__item">
+                        <div class="cover">
+                            <img src="./images/products/1.png">
+                        </div>
+                        <div class="info">
+                            <h3 class="h3">Гранитная плита</h3>
+                            <h2 class="h2">19 500 Р</h2>
+                            <p class="text-p">Плита изготавливается по индивидуальному дизайну. Стоимость плиты не
+                                зависит от ее
+                                размера.</p>
+                        </div>
+                        <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#cb-modal">Оформить заказ</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="splide-custom-pagination splide__arrows">
+            <div class="splide__pagination">
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-us">
+    <div class="container about-us__container">
+        <img src="./images/about-illustration.png" alt="" class="about-us__illustration">
+        <div class="about-us__main">
+            <h2 class="h1">О нас</h2>
+            <div class="text-p">
+                Опыт работы ритуального агентства с 2007 <br>
+                Сертификат на деятельность похоронного агента <br>
+                Все агенты работают много лет, выглядят достойно, опрятно, серьезно и грамотно <br>
+                Отзывы реальных пользователей услуг более 150 человек с оценкой 4,9 и их не скрываем <br>
+                Собственный транспорт катафалков, автобуса, прощальное кафе, магазин-выставка рит.товаров <br>
+                Специализированное агентство по Covid-19 и разрешение, навык на специальные похороны <br>
+                Договоренность с любым кладбищем Омска на захоронение, с любым ЗАГСом и моргами города <br>
+                Собственный транспорт для перевозки груз-200 в крематорий Новосибирска и полный процесс
+            </div>
+            <div class="features-grid">
+                <div class="feature-item text-p">Специализация только на колумбарных плитах, следовательно качество
+                    изделий выше, чем на рынке
+                </div>
+                <div class="feature-item text-p">Важность колумбарной плиты для кремированного человека, равноценна
+                    памятнику для погребенного
+                </div>
+                <div class="feature-item text-p">Наличие логотипа «КОЛУМБАР» на плите - равно знак качества</div>
+                <div class="feature-item text-p">Сохранить облик близкого человека с фотографичной точностью потомкам
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="how-we-work">
+    <div class="container">
+        <h2 class="h1">Как мы работаем</h2>
+        <div class="how-we-work__container">
+            <div class="how-we-work__decor"></div>
+            <div class="how-we-work__grid">
+                <div class="how-we-work__item">
+                    <div class="icon"><img src="./images/how-we-work/1.svg" alt=""></div>
+                    <div class="main">
+                        <h4 class="h4">Телефонная консультация</h4>
+                        <p class="text-p">Клиент оставляет заявку на сайте и наши сотрудники связываеются с ним.</p>
+                    </div>
+                </div>
+                <div class="how-we-work__item">
+                    <div class="icon"><img src="./images/how-we-work/2.svg" alt=""></div>
+                    <div class="main">
+                        <h4 class="h4">Оформление заказа</h4>
+                        <p class="text-p">Формирование сделки в битриксе на основе пожеланий и предпочтений
+                            заказчика.</p>
+                    </div>
+                </div>
+                <div class="how-we-work__item">
+                    <div class="icon"><img src="./images/how-we-work/3.svg" alt=""></div>
+                    <div class="main">
+                        <h4 class="h4">Разработка макета</h4>
+                        <p class="text-p">Дизайнер связывается с заказчиком для уточнения нюансов, разрабатывает макет,
+                            согласовывает его с заказчиком.</p>
+                    </div>
+                </div>
+                <div class="how-we-work__item">
+                    <div class="icon"><img src="./images/how-we-work/4.svg" alt=""></div>
+                    <div class="main">
+                        <h4 class="h4">Оплата</h4>
+                        <p class="text-p">Сообщение платежных реквизитов клиенту для 100% предоплаты</p>
+                    </div>
+                </div>
+                <div class="how-we-work__item">
+                    <div class="icon"><img src="./images/how-we-work/5.svg" alt=""></div>
+                    <div class="main">
+                        <h4 class="h4">Изготовление изделия</h4>
+                        <p class="text-p">Сроки изготовления изделия обговариваются с заказчиком. Максимальный срок - 2
+                            недели.</p>
+                    </div>
+                </div>
+                <div class="how-we-work__item">
+                    <div class="icon"><img src="./images/how-we-work/6.svg" alt=""></div>
+                    <div class="main">
+                        <h4 class="h4">Отправка изделия</h4>
+                        <p class="text-p">Отправдяем изделие в любую точку страны любого горрода.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio splide" aria-label="Portfolio">
+    <div class="container-fluid portfolio__grid">
+        <h2 class="h1">Наши работы</h2>
+        <div class="portfolio__decor"></div>
+        <p class="text-p">Индивидуальный подход к каждому заказу.</p>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="./images/examples/4.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="./images/examples/3.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="./images/examples/2.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="./images/examples/1.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="./images/examples/4.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="./images/examples/3.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="./images/examples/2.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="./images/examples/1.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="splide-custom-pagination splide__arrows">
+            <div class="splide__pagination"></div>
+        </div>
+    </div>
+</section>
+<section class="cb-form">
+    <div class="container">
+        <div class="cb-form__grid">
+            <h2 class="h1">Если у вас есть вопросы и необходима консультация, оставьте свои данные и мы перезвоним
+                вам.</h2>
+            <form class="cb-form__form" id="cb-form">
+                <div class="form-input">
+                    <input type="text" name="name" id="name" required placeholder="Имя">
+                </div>
+                <div class="form-input">
+                    <input type="text" name="phone" id="phone" required data-inputmask="'mask':'+7(999)999-99-99'"
+                           placeholder="Телефон">
+                </div>
+                <div class="text-agreement text-small">
+                    Отправляя форму, вы даете <a href="#">Согласие на обработку
+                    персональных данных.</a>
+                </div>
+                <button class="btn-primary">
+                    Заказать консультацию
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="logo">
+                <a href="/">
+                    <img src="./images/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="decorator"></div>
+            <div class="contacts">
+                <a href="mailto:2999147@ngs.ru" class="contacts__item text-p">
+                    <img src="./images/icons/email.svg" alt="email-icon">
+                    <span>2999147@ngs.ru</span>
+                </a>
+                <a href="tel:8 800 800 80 80" class="contacts__item text-p">
+                    <img src="./images/icons/phone.svg" alt="phone-icon">
+                    <span>8 800 800 80 80</span>
+                </a>
+            </div>
+            <div class="socials">
+                <a href="#">
+                    <img src="./images/icons/vk.svg" alt="icon-vk">
+                </a>
+                <a href="#">
+                    <img src="./images/icons/instagram.svg" alt="icon-instagram">
+                </a>
+
+            </div>
+            <div class="work-author">
+                <div class="text-small">Создание и продвижение</div>
+                <a href="#" class="work-author-logo">
+                    <img  src="./images/DA-logo.svg" alt="Digital Around logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" tabindex="-1" id="cb-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body cb-modal">
+                <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z"
+                              fill="currentColor"/>
+                    </svg>
+                </button>
+                <h2 class="h1">Заполните форму</h2>
+                <form id="cb-modal-form">
+                    <div class="form-input">
+                        <input type="text" name="name" id="name" required placeholder="Имя">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="phone" id="phone" required data-inputmask="'mask':'+7(999)999-99-99'"
+                               placeholder="Телефон">
+                    </div>
+                    <div class="text-agreement text-small">
+                        Отправляя форму, вы даете <a href="#">Согласие на обработку
+                        персональных данных.</a>
+                    </div>
+                    <button class="btn-primary">
+                        Заказать звонок
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/app.min.js"></script>
+<script src="./js/index.min.js"></script>
+</body>
+</html>
