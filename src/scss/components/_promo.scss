@@ -1,0 +1,119 @@
+.promo {
+  position: relative;
+  z-index: 1;
+  padding-top: 94px;
+  padding-bottom: 20px;
+  background: url("../images/promo-illustration.png") no-repeat;
+  background-position-x: center;
+  background-position-y: 44px;
+  background-size: 544px;
+  @include media-breakpoint-up(md) {
+    padding-top: 147px;
+    height: 709px;
+    background-position-x: 83.7%;
+    background-position-y: 17%;
+    background-size: auto;
+  }
+
+  &__block {
+    @include media-breakpoint-down(md) {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  &__anons {
+    padding: 20px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: -16px;
+      right: -16px;
+      top: -20px;
+      bottom: 0;
+      background: rgba(50, 53, 68, 0.7);
+    }
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .text-heading {
+      margin-bottom: 30px;
+    }
+
+    .text-anons {
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-up(md) {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      margin-left: 40px;
+      padding: 40px 60px;
+      min-height: 414px;
+      margin-bottom: 20px;
+      .text-heading {
+        margin-bottom: 40px;
+      }
+      .text-heading,
+      .text-anons {
+        max-width: 614px;
+      }
+
+      &:after {
+        width: 774px;
+        top: -60px;
+        right: auto;
+        bottom: 60px;
+        left: -40px;
+      }
+    }
+  }
+
+  &__features {
+    padding: 20px 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 16px;
+
+    @include media-breakpoint-down(md) {
+      .feature-item {
+        &:nth-of-type(2) {
+          order: 1
+        }
+
+        &:nth-of-type(3) {
+          order: 3
+        }
+
+        &:nth-of-type(4) {
+          order: 2
+        }
+
+        &:nth-of-type(5) {
+          order: 4
+        }
+      }
+    }
+
+    &__decor {
+      width: 40px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.4);
+      margin-top: 12px;
+      flex: none;
+      margin-right: -45px;
+    }
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+      gap: 94px;
+      padding-left: 40px;
+      padding-right: 0;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid rgba(246, 244, 244, .6);
+  gap: 30px;
+  margin-bottom: 44px;
+
+  &__item {
+    position: relative;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.07em;
+    color: #112234;
+    opacity: 0.6;
+    @media (max-width: 1023px) {
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 1.3px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      background: #F6CE45;
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    &:hover,
+    &[aria-expanded=true],
+    &.--active {
+      color: #112234;
+      opacity: 1;
+
+      &:after {
+        opacity: .4;
+      }
+    }
+  }
+}

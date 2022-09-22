@@ -1,0 +1,32 @@
+.btn-primary {
+  font-family: 'Muller', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  border: 0;
+  height: 48px;
+  padding: 12px 21px;
+  color: white;
+  background: #C66753;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background: #C95B44;
+  }
+
+  &:active {
+    background: #C95B44;
+    box-shadow: 0 0 10px rgba(5, 8, 23, 0.6);
+  }
+
+  &:disabled {
+    background: rgba(198, 103, 83, 0.2);
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

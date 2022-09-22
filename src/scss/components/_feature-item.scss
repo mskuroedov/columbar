@@ -1,0 +1,20 @@
+.feature-item {
+  display: flex;
+
+  &:before {
+    content: '';
+    display: block;
+    margin-left: 6px;
+    margin-top: 6px;
+    margin-right: 10px;
+    width: 4px;
+    height: 4px;
+    background: #C66753;
+    flex: none;
+    @include media-breakpoint-up(md){
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-right: 20px;
+    }
+  }
+}

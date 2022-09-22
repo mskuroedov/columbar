@@ -1,0 +1,91 @@
+.portfolio {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  .h1, .text-p {
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+  &__decor {
+    height: 1px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 10px auto;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      margin-top: auto;
+      margin-bottom: 18px;
+    }
+  }
+
+  .text-p {
+    margin-bottom: 20px;
+  }
+
+  .splide__track {
+    @include media-breakpoint-down(md) {
+      margin: 0 -16px;
+    }
+  }
+
+  .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .splide-custom-pagination {
+    @include media-breakpoint-down(md) {
+      padding-top: 30px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 34px;
+    &__grid {
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: 0;
+      width: calc(100vw - (100vw - 1000px) / 2);
+
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 264px auto;
+      grid-template-rows: auto auto;
+      gap: 42px 50px;
+      grid-template-areas:
+        "title decor"
+        "left slider";
+      height: 100%;
+
+      .h1 {
+        grid-area: title;
+      }
+
+      .portfolio__decor {
+        grid-area: decor;
+      }
+
+      .text-p, .splide-custom-pagination {
+        grid-area: left;
+      }
+
+      .splide-custom-pagination {
+        margin-top: auto;
+        justify-content: flex-start;
+      }
+
+      .splide__track {
+        grid-area: slider;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &__grid {
+      width: calc(100vw - (100vw - 1176px) / 2);
+    }
+  }
+}
